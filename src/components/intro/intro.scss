@@ -1,15 +1,18 @@
 @import '../../universal-styles.scss';
 
 .intro {
-    background-color: $primary-light;
     height: calc(100vh - 10vh);
     display: flex;
 
     .image-section {
         flex-basis: 100%;
+        position: relative;
 
         img {
             max-height: 100%;
+            max-width: 100%;
+            position: absolute;
+            bottom: 0;
         }
     }
 
@@ -20,7 +23,7 @@
 
         h2 {
             text-transform: uppercase;
-            font-size: 3.5rem;
+            font-size: 2.5rem;
         }
 
         p {
@@ -41,5 +44,31 @@
 
             }
         }
+    }
+}
+
+.slide1 {
+    background-color: $primary-light;
+}
+
+.slide2 {
+    background-color: #F0F8FA;
+}
+
+.slide3 {
+    background-color: #F2F2F2;
+}
+
+@media only screen and (max-width: 750px) {
+    .intro {
+        height: calc(60vh - 10vh);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .intro {
+        height: calc(80vh - 10vh);
+        flex-direction: column;
+        align-content: center;
     }
 }

@@ -1,18 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect, useRef} from 'react';
 import './intro.scss';
-import homepageImage from '../../files/homepage-image.jpg';
+import { Slide1, Slide2, Slide3 } from './data';
+// import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 export default function Intro() {
+    const index = useRef(0);
+    const slides = [Slide1, Slide2, Slide3]
+    const [slide, setSlide] = useState(slides[index]);
+    
+    useEffect(()=>{
+      const timer = setInterval(() => {
+        if ( index.current < slides.length - 1) {
+          index.current++;
+        } else {
+          index.current = 0;
+        }
+        setSlide(slides[index.current])
+    }, 5000);
+    return ()=>{
+      clearInterval(timer);
+        }
+    });
+
     return (
-        <div className="intro">
-            <div className="image-section">
-                <img src={homepageImage} alt="homepage design" className="homepage-image" />
-            </div>
-            <div className="text-section">
-                <h2>Summer Sale</h2>
-                <p>Don't compromise on style! Shop 30% off a selected range</p>
-                <button>Shop Now</button>
-            </div>
+        <div>
+            {slide}
         </div>
     )
 }
