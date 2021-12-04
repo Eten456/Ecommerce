@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "universal-styles.scss"
+    ],
+    "names": [],
+    "file": "universal-styles.css"
+}
