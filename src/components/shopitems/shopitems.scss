@@ -11,6 +11,7 @@
     .itemContainer {
         cursor: pointer;
         background-color: $primary-light;
+        border: 1px solid $primary-neutral-opacity;
         .item-image {
             max-width: 100%;
         }

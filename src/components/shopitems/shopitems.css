@@ -59,9 +59,29 @@ html, body {
   font-size: 16px;
 }
 
-.navbar {
-  height: 10vh;
-  background-color: #3c4d3e;
-  color: #fff;
+.shopitems {
+  background-color: #F1EEE5;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-rows: (1fr)[2];
+  -ms-grid-columns: (1fr)[4];
+      grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+  height: auto;
+  gap: 10px;
+  background-color: #fff;
 }
-/*# sourceMappingURL=navbar.css.map */
+
+.shopitems .itemContainer {
+  cursor: pointer;
+  background-color: #F1EEE5;
+  border: 1px solid rgba(155, 155, 155, 0.212);
+}
+
+.shopitems .itemContainer .item-image {
+  max-width: 100%;
+}
+
+.shopitems .itemContainer:hover {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=shopitems.css.map */

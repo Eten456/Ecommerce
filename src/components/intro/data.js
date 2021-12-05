@@ -7,6 +7,8 @@ import landscapeslide2 from '../../files/landscape-slide-2.jpg';
 import landscapeslide3 from '../../files/landscape-slide-3.jpg';
 import './intro.scss';
 
+// import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+
 export const Slide1 = () => {
     return (
     <div className="intro">
@@ -17,7 +19,9 @@ export const Slide1 = () => {
         <div className="text-section">
             <h2>Summer Sale</h2>
             <p>Don't compromise on style! Shop 30% off a selected range</p>
-            <button>Shop Now</button>
+            <button>Shop Now
+            {/* {ArrowRightAltIcon} */}
+            </button>
         </div>
     </div>
     )

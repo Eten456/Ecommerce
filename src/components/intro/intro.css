@@ -64,6 +64,7 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #F1EEE5;
 }
 
 .intro .image-section {
@@ -77,6 +78,14 @@ html, body {
   max-width: 100%;
   position: absolute;
   bottom: 0;
+}
+
+.intro .image-section .portrait-homepage-image {
+  display: block;
+}
+
+.intro .image-section .landscape-homepage-image {
+  display: none;
 }
 
 .intro .text-section {
@@ -115,11 +124,11 @@ html, body {
 }
 
 .slide2 {
-  background-color: #F0F8FA;
+  background-color: #EEF6F8;
 }
 
 .slide3 {
-  background-color: #F2F2F2;
+  background-color: #F1F1F1;
 }
 
 @media only screen and (max-width: 750px) {
@@ -128,7 +137,7 @@ html, body {
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 525px) {
   .intro {
     height: calc(80vh - 10vh);
     -webkit-box-orient: vertical;
@@ -137,6 +146,22 @@ html, body {
             flex-direction: column;
     -ms-flex-line-pack: center;
         align-content: center;
+  }
+  .intro .image-section .portrait-homepage-image {
+    display: none;
+  }
+  .intro .image-section .landscape-homepage-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .intro .text-section {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+  .intro .text-section p {
+    margin: 1rem 0;
   }
 }
 /*# sourceMappingURL=intro.css.map */

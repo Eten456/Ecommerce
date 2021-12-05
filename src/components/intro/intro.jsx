@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef} from 'react';
 import './intro.scss';
 import { Slide1, Slide2, Slide3 } from './data';
-// import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 export default function Intro() {
     const index = useRef(0);

@@ -3,6 +3,7 @@
 .intro {
     height: calc(100vh - 10vh);
     display: flex;
+    background-color: $primary-light;
 
     .image-section {
         flex-basis: 100%;
