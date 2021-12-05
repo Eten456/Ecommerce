@@ -5,7 +5,7 @@ import { Slide1, Slide2, Slide3 } from './data';
 export default function Intro() {
     const index = useRef(0);
     const slides = [Slide1, Slide2, Slide3]
-    const [slide, setSlide] = useState(slides[index]);
+    const [slide, setSlide] = useState(slides[0]);
     
     useEffect(()=>{
       const timer = setInterval(() => {
