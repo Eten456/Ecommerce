@@ -1,13 +1,18 @@
-import homepageImage from '../../files/homepage-image.jpg';
+import slide1img from '../../files/slide-1.jpg';
 import slide2img from '../../files/slide-2.jpg';
 import slide3img from '../../files/slide-3.jpg';
+
+import landscapeslide1 from '../../files/landscape-slide-1.jpg';
+import landscapeslide2 from '../../files/landscape-slide-2.jpg';
+import landscapeslide3 from '../../files/landscape-slide-3.jpg';
 import './intro.scss';
 
 export const Slide1 = () => {
     return (
-    <div className="intro slide1">
+    <div className="intro">
         <div className="image-section">
-            <img src={homepageImage} alt="homepage design" className="homepage-image" />
+            <img src={slide1img} alt="homepage design" className="portrait-homepage-image slide1" />
+            <img src={landscapeslide1} alt="homepage design" className="landscape-homepage-image landscapeslide1" />
         </div>
         <div className="text-section">
             <h2>Summer Sale</h2>
@@ -22,7 +27,8 @@ export const Slide2 = () => {
     return (
     <div className="intro slide2">
         <div className="image-section">
-            <img src={slide2img} alt="homepage design" className="homepage-image" />
+            <img src={slide2img} alt="homepage design" className="portrait-homepage-image" />
+            <img src={landscapeslide2} alt="homepage design" className="landscape-homepage-image" />
         </div>
         <div className="text-section">
             <h2>View The Latest Collection</h2>
@@ -39,7 +45,8 @@ export const Slide3 = () => {
     return (
     <div className="intro slide3">
         <div className="image-section">
-            <img src={slide3img} alt="homepage design" className="homepage-image" />
+            <img src={slide3img} alt="homepage design" className="portrait-homepage-image" />
+            <img src={landscapeslide3} alt="homepage design" className="landscape-homepage-image" />
         </div>
         <div className="text-section">
             <h2>View the latest trends</h2>

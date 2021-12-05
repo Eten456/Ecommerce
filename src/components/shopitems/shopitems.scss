@@ -1,0 +1,22 @@
+@import '../../universal-styles.scss';
+
+.shopitems {
+    background-color: $primary-light;
+    display: inline-grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    height: auto;
+    gap: 10px;
+    background-color: #fff;
+
+    .itemContainer {
+        cursor: pointer;
+        background-color: $primary-light;
+        .item-image {
+            max-width: 100%;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}

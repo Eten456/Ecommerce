@@ -14,6 +14,14 @@
             position: absolute;
             bottom: 0;
         }
+
+        .portrait-homepage-image {
+            display: block;
+        }
+
+        .landscape-homepage-image {
+            display: none;
+        }
     }
 
     .text-section {
@@ -52,11 +60,11 @@
 }
 
 .slide2 {
-    background-color: #F0F8FA;
+    background-color: #EEF6F8;
 }
 
 .slide3 {
-    background-color: #F2F2F2;
+    background-color: #F1F1F1;
 }
 
 @media only screen and (max-width: 750px) {
@@ -65,10 +73,33 @@
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 525px) {
     .intro {
         height: calc(80vh - 10vh);
         flex-direction: column;
         align-content: center;
+
+        .image-section {
+
+            .portrait-homepage-image {
+                display: none;
+            }
+    
+            .landscape-homepage-image {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+        }
+
+        .text-section {
+            text-align: center;
+            width: 90%;
+            margin: auto;
+            p {
+                margin: 1rem 0;
+            }
+        }
     }
 }
